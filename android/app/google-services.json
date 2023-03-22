@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993599747694",
+    "project_id": "flutterfresh-7c785",
+    "storage_bucket": "flutterfresh-7c785.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993599747694:android:d4e73b96cdc28e2a3f187f",
+        "android_client_info": {
+          "package_name": "com.example.foodpp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993599747694-qhud8e7dpm9idq0qu8rsktv00g09ec61.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXFmQ1C8MVCP5227HEAxgDjOrwmJpq0uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993599747694-qhud8e7dpm9idq0qu8rsktv00g09ec61.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
