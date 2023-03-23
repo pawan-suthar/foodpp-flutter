@@ -3,6 +3,120 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
 class Home extends StatelessWidget {
+  Widget singlepro() {
+    return Container(
+      margin: EdgeInsets.symmetric(horizontal: 10),
+      height: 250,
+      width: 180,
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10),
+        color: Colors.white,
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          /* 
+                      * product image
+                      */
+          Expanded(
+            flex: 2,
+            child: Image.network(
+              "https://m.media-amazon.com/images/I/71BLz5r7aiL._SX679_.jpg",
+              height: 150,
+              width: 150,
+            ),
+          ),
+
+          /* 
+                      * product image details
+                      */
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "Fresh Mint Leaves",
+                    style: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "15₹/100gm",
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Container(
+                          padding: EdgeInsets.only(left: 5),
+                          height: 30,
+                          width: 50,
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                child: Text(
+                                  "100gm",
+                                  style: TextStyle(color: Colors.black),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                      SizedBox(
+                        width: 5,
+                      ),
+                      Expanded(
+                        child: Container(
+                          height: 30,
+                          width: 50,
+                          decoration: BoxDecoration(
+                            border: Border.all(
+                              color: Colors.grey,
+                            ),
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.remove,
+                                size: 15,
+                                color: Colors.green,
+                              ),
+                              Text(
+                                "1",
+                                style: TextStyle(color: Colors.orange),
+                              ),
+                              Icon(
+                                Icons.add,
+                                size: 15,
+                                color: Colors.green,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
   const Home({super.key});
 
   @override
@@ -142,151 +256,11 @@ class Home extends StatelessWidget {
             * product cart
             */
 
-            Row(
-              children: [
-                Container(
-                  height: 250,
-                  width: 160,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(10),
-                    color: Colors.white,
-                  ),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      /* 
-                      * product image
-                      */
-                      Expanded(
-                        flex: 2,
-                        child: Image.network(
-                          "https://m.media-amazon.com/images/I/71BLz5r7aiL._SX679_.jpg",
-                          height: 150,
-                          width: 150,
-                        ),
-                      ),
-
-                      /* 
-                      * product image details
-                      */
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 10, vertical: 10),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                "Fresh Mint Leaves",
-                                style: TextStyle(
-                                    color: Colors.black,
-                                    fontWeight: FontWeight.bold),
-                              ),
-
-                              Text(
-                                "15₹/100gm",
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                ),
-                              ),
-
-                              Row(
-                                children: [
-                                  Expanded(
-                                    child: Container(
-                                      height: 30,
-                                      width: 50,
-                                      decoration: BoxDecoration(
-                                          border: Border.all(
-                                            color: Colors.grey,
-                                          ),
-                                          borderRadius:
-                                              BorderRadius.circular(10)),
-                                    ),
-                                  ),
-                                  SizedBox(
-                                    width: 5,
-                                  ),
-                                  Expanded(
-                                    child: Container(
-                                      height: 30,
-                                      width: 50,
-                                      decoration: BoxDecoration(
-                                        border: Border.all(
-                                          color: Colors.grey,
-                                        ),
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                      child: Row(
-                                        children: [
-                                          Expanded(
-                                            child: Text(
-                                              "100gm",
-                                              style: TextStyle(
-                                                  color: Colors.black),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-
-                              // Row(
-                              //   children: [
-                              //     Expanded(
-                              //       child: Container(
-                              //         height: 30,
-                              //         child: MaterialButton(
-                              //           onPressed: () {},
-                              //           child: Row(children: [
-                              //             Expanded(
-                              //               child: Text(
-                              //                 "100gm",
-                              //                 style: TextStyle(
-                              //                     fontSize: 10,
-                              //                     color: Colors.black),
-                              //               ),
-                              //             ),
-                              //             Expanded(
-                              //               child: Icon(
-                              //                 Icons.arrow_drop_down,
-                              //                 color: Colors.green,
-                              //               ),
-                              //             )
-                              //           ]),
-                              //         ),
-                              //       ),
-                              //     ),
-                              //     Expanded(
-                              //       child: Container(
-                              //         height: 30,
-                              //         child: MaterialButton(
-                              //           onPressed: () {},
-                              // child: Row(
-                              //   children: [
-
-                              //             Expanded(
-                              //               child: Icon(
-                              //                 Icons.arrow_drop_down,
-                              //                 color: Colors.green,
-                              //               ),
-                              //             )
-                              //           ]),
-                              //         ),
-                              //       ),
-                              //     ),
-                              //   ],
-                              // ),
-                            ],
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ],
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [singlepro(), singlepro(), singlepro()],
+              ),
             ),
           ],
         ),
