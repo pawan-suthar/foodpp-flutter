@@ -182,12 +182,103 @@ class Home extends StatelessWidget {
                                     color: Colors.black,
                                     fontWeight: FontWeight.bold),
                               ),
+
                               Text(
                                 "15₹/100gm",
                                 style: TextStyle(
                                   color: Colors.grey,
                                 ),
                               ),
+
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: Container(
+                                      height: 30,
+                                      width: 50,
+                                      decoration: BoxDecoration(
+                                          border: Border.all(
+                                            color: Colors.grey,
+                                          ),
+                                          borderRadius:
+                                              BorderRadius.circular(10)),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 5,
+                                  ),
+                                  Expanded(
+                                    child: Container(
+                                      height: 30,
+                                      width: 50,
+                                      decoration: BoxDecoration(
+                                        border: Border.all(
+                                          color: Colors.grey,
+                                        ),
+                                        borderRadius: BorderRadius.circular(10),
+                                      ),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: Text(
+                                              "100gm",
+                                              style: TextStyle(
+                                                  color: Colors.black),
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+
+                              // Row(
+                              //   children: [
+                              //     Expanded(
+                              //       child: Container(
+                              //         height: 30,
+                              //         child: MaterialButton(
+                              //           onPressed: () {},
+                              //           child: Row(children: [
+                              //             Expanded(
+                              //               child: Text(
+                              //                 "100gm",
+                              //                 style: TextStyle(
+                              //                     fontSize: 10,
+                              //                     color: Colors.black),
+                              //               ),
+                              //             ),
+                              //             Expanded(
+                              //               child: Icon(
+                              //                 Icons.arrow_drop_down,
+                              //                 color: Colors.green,
+                              //               ),
+                              //             )
+                              //           ]),
+                              //         ),
+                              //       ),
+                              //     ),
+                              //     Expanded(
+                              //       child: Container(
+                              //         height: 30,
+                              //         child: MaterialButton(
+                              //           onPressed: () {},
+                              // child: Row(
+                              //   children: [
+
+                              //             Expanded(
+                              //               child: Icon(
+                              //                 Icons.arrow_drop_down,
+                              //                 color: Colors.green,
+                              //               ),
+                              //             )
+                              //           ]),
+                              //         ),
+                              //       ),
+                              //     ),
+                              //   ],
+                              // ),
                             ],
                           ),
                         ),
