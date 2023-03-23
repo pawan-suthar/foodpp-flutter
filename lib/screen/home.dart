@@ -8,6 +8,7 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffcbcbcb),
       drawer: Drawer(),
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.black),
@@ -44,13 +45,17 @@ class Home extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 10),
         child: Column(
           children: [
+            /* 
+            * Top image
+            */
             Container(
               height: 150,
               decoration: BoxDecoration(
                   image: DecorationImage(
-                      fit: BoxFit.cover,
-                      image: NetworkImage(
-                          'https://images.pexels.com/photos/1108716/pexels-photo-1108716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')),
+                    fit: BoxFit.cover,
+                    image: NetworkImage(
+                        'https://images.pexels.com/photos/1108716/pexels-photo-1108716.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
+                  ),
                   borderRadius: BorderRadius.circular(10),
                   color: Colors.black),
               child: Row(
@@ -118,6 +123,79 @@ class Home extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text("Green seasoning"),
+                  Text(
+                    "View All",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ],
+              ),
+            ),
+
+            /* 
+            * product cart
+            */
+
+            Row(
+              children: [
+                Container(
+                  height: 250,
+                  width: 160,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.white,
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      /* 
+                      * product image
+                      */
+                      Expanded(
+                        flex: 2,
+                        child: Image.network(
+                          "https://m.media-amazon.com/images/I/71BLz5r7aiL._SX679_.jpg",
+                          height: 150,
+                          width: 150,
+                        ),
+                      ),
+
+                      /* 
+                      * product image details
+                      */
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 10, vertical: 10),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                "Fresh Mint Leaves",
+                                style: TextStyle(
+                                    color: Colors.black,
+                                    fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "15₹/100gm",
+                                style: TextStyle(
+                                  color: Colors.grey,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
             ),
           ],
         ),
