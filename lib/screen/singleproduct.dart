@@ -3,17 +3,20 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
+typedef VoidCallback = void Function();
+
 // ignore: camel_case_types
 class singleproveg extends StatelessWidget {
   final String proimg;
   final String proname;
-  final Function onTap;
+  final VoidCallback onTap;
 
   const singleproveg(
-      {super.key,
+      {Key? key,
       required this.proimg,
       required this.proname,
-      required this.onTap});
+      required this.onTap})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,14 +32,18 @@ class singleproveg extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           /* 
-                      * product image
-                      */
+          * product image
+          */
+
           Expanded(
             flex: 2,
-            child: Image.network(
-              proimg,
-              height: 150,
-              width: 150,
+            child: GestureDetector(
+              onTap: onTap,
+              child: Image.network(
+                proimg,
+                height: 150,
+                width: 150,
+              ),
             ),
           ),
 
@@ -135,13 +142,14 @@ class singleproveg extends StatelessWidget {
 class singleprofru extends StatelessWidget {
   final String proimg;
   final String proname;
-  final Function onTap;
+  final VoidCallback onTap;
 
   const singleprofru(
-      {super.key,
+      {Key? key,
       required this.proimg,
       required this.proname,
-      required this.onTap});
+      required this.onTap})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -157,20 +165,23 @@ class singleprofru extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           /* 
-                      * product image
-                      */
+            * product image
+            */
           Expanded(
             flex: 2,
-            child: Image.network(
-              proimg,
-              height: 150,
-              width: 150,
+            child: GestureDetector(
+              onTap: () => onTap(),
+              child: Image.network(
+                proimg,
+                height: 150,
+                width: 150,
+              ),
             ),
           ),
 
           /* 
-                      * product image details
-                      */
+            * product image details
+            */
           Expanded(
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
@@ -180,7 +191,9 @@ class singleprofru extends StatelessWidget {
                   Text(
                     proname,
                     style: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   Text(
                     "15₹/100gm",
