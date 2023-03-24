@@ -3,7 +3,12 @@ import 'package:flutter/material.dart';
 enum singlechar { fill, outline }
 
 class ProducOverview extends StatefulWidget {
-  const ProducOverview({super.key});
+  final String productname;
+  final String productimage;
+  // ProducOverview({required this.productname, required this.productimage});
+
+  const ProducOverview(
+      {super.key, required this.productname, required this.productimage});
 
   @override
   State<ProducOverview> createState() => _ProducOverviewState();
@@ -93,14 +98,13 @@ class _ProducOverviewState extends State<ProducOverview> {
               child: Column(
                 children: [
                   ListTile(
-                    title: Text("carrot"),
+                    title: Text(widget.productname),
                     subtitle: Text("\₹15"),
                   ),
                   Container(
                     height: 180,
                     padding: EdgeInsets.all(10),
-                    child: Image.network(
-                        "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/332740a.jpg?ts=1679311401"),
+                    child: Image.network(widget.productimage),
                   ),
                   Container(
                     padding: EdgeInsets.symmetric(

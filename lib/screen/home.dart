@@ -296,7 +296,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: "Carrots",
+                            productimage:
+                                "https://m.media-amazon.com/images/I/41ZInO1t2VL.jpg",
+                          ),
                         ),
                       );
                     },
@@ -308,7 +312,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: "Cabbage",
+                            productimage:
+                                'https://m.media-amazon.com/images/I/71IoNP7O8eL._AC_UL480_FMwebp_QL65_.jpg',
+                          ),
                         ),
                       );
                     },
@@ -320,7 +328,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Tomato',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/445675a.jpg?ts=1648026977',
+                          ),
                         ),
                       );
                     },
@@ -332,7 +344,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Onions',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/391306a.jpg?ts=1652789363',
+                          ),
                         ),
                       );
                     },
@@ -344,7 +360,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Capsicum',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/3888a.jpg?ts=1679311401',
+                          ),
                         ),
                       );
                     },
@@ -356,7 +376,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Leamons',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/439699a.jpg',
+                          ),
                         ),
                       );
                     },
@@ -391,7 +415,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Banana',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/470636a.jpg?ts=1677063692',
+                          ),
                         ),
                       );
                     },
@@ -403,7 +431,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Grapes',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/347025a.jpg?ts=1652855625',
+                          ),
                         ),
                       );
                     },
@@ -415,7 +447,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Apple',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/428612a.jpg?ts=1658731563',
+                          ),
                         ),
                       );
                     },
@@ -427,7 +463,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Kiwi',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/394525a.jpg?ts=1610740513',
+                          ),
                         ),
                       );
                     },
@@ -439,7 +479,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Muskmelon',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/365455a.jpg?ts=1658731562',
+                          ),
                         ),
                       );
                     },
@@ -474,7 +518,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Banana',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/470636a.jpg?ts=1677063692',
+                          ),
                         ),
                       );
                     },
@@ -486,7 +534,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Grapes',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/347025a.jpg?ts=1652855625',
+                          ),
                         ),
                       );
                     },
@@ -498,7 +550,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Apple',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/428612a.jpg?ts=1658731563',
+                          ),
                         ),
                       );
                     },
@@ -510,7 +566,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Kiwi',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/394525a.jpg?ts=1610740513',
+                          ),
                         ),
                       );
                     },
@@ -522,7 +582,11 @@ class Home extends StatelessWidget {
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Muskmelon',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/365455a.jpg?ts=1658731562',
+                          ),
                         ),
                       );
                     },
@@ -531,12 +595,12 @@ class Home extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(vertical: 20),
+              padding: const EdgeInsets.symmetric(vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text(
-                    "fresh Fruits ",
+                    "Green seasoning",
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   Text(
@@ -546,66 +610,231 @@ class Home extends StatelessWidget {
                 ],
               ),
             ),
+
+            /* 
+            * product cart
+            */
+
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
                 children: [
-                  singleprofru(
-                    proname: 'Banana',
+                  singleproveg(
+                    proname: 'Carrots',
                     proimg:
-                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/470636a.jpg?ts=1677063692',
+                        'https://m.media-amazon.com/images/I/41ZInO1t2VL.jpg',
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: "Carrots",
+                            productimage:
+                                "https://m.media-amazon.com/images/I/41ZInO1t2VL.jpg",
+                          ),
                         ),
                       );
                     },
                   ),
-                  singleprofru(
-                    proname: 'Grapes',
+                  singleproveg(
+                    proname: 'Cabbage',
                     proimg:
-                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/347025a.jpg?ts=1652855625',
+                        'https://m.media-amazon.com/images/I/71IoNP7O8eL._AC_UL480_FMwebp_QL65_.jpg',
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: "Cabbage",
+                            productimage:
+                                'https://m.media-amazon.com/images/I/71IoNP7O8eL._AC_UL480_FMwebp_QL65_.jpg',
+                          ),
                         ),
                       );
                     },
                   ),
-                  singleprofru(
-                    proname: 'Apple',
+                  singleproveg(
+                    proname: 'Tomato',
                     proimg:
-                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/428612a.jpg?ts=1658731563',
+                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/445675a.jpg?ts=1648026977',
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Tomato',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/445675a.jpg?ts=1648026977',
+                          ),
                         ),
                       );
                     },
                   ),
-                  singleprofru(
-                    proname: 'Kiwi',
+                  singleproveg(
+                    proname: 'Onions',
                     proimg:
-                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/394525a.jpg?ts=1610740513',
+                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/391306a.jpg?ts=1652789363',
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Onions',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/391306a.jpg?ts=1652789363',
+                          ),
                         ),
                       );
                     },
                   ),
-                  singleprofru(
-                    proname: 'Muskmelon',
+                  singleproveg(
+                    proname: 'Capsicum',
                     proimg:
-                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/365455a.jpg?ts=1658731562',
+                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/3888a.jpg?ts=1679311401',
                     onTap: () {
                       Navigator.of(context).push(
                         MaterialPageRoute(
-                          builder: (context) => ProducOverview(),
+                          builder: (context) => ProducOverview(
+                            productname: 'Capsicum',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/3888a.jpg?ts=1679311401',
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                  singleproveg(
+                    proname: 'Leamons',
+                    proimg:
+                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/439699a.jpg',
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => ProducOverview(
+                            productname: 'Leamons',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/439699a.jpg',
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ],
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(vertical: 10),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Green seasoning",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  Text(
+                    "View All",
+                    style: TextStyle(color: Colors.grey),
+                  ),
+                ],
+              ),
+            ),
+
+            /* 
+            * product cart
+            */
+
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  singleproveg(
+                    proname: 'Carrots',
+                    proimg:
+                        'https://m.media-amazon.com/images/I/41ZInO1t2VL.jpg',
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => ProducOverview(
+                            productname: "Carrots",
+                            productimage:
+                                "https://m.media-amazon.com/images/I/41ZInO1t2VL.jpg",
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                  singleproveg(
+                    proname: 'Cabbage',
+                    proimg:
+                        'https://m.media-amazon.com/images/I/71IoNP7O8eL._AC_UL480_FMwebp_QL65_.jpg',
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => ProducOverview(
+                            productname: "Cabbage",
+                            productimage:
+                                'https://m.media-amazon.com/images/I/71IoNP7O8eL._AC_UL480_FMwebp_QL65_.jpg',
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                  singleproveg(
+                    proname: 'Tomato',
+                    proimg:
+                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/445675a.jpg?ts=1648026977',
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => ProducOverview(
+                            productname: 'Tomato',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/445675a.jpg?ts=1648026977',
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                  singleproveg(
+                    proname: 'Onions',
+                    proimg:
+                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/391306a.jpg?ts=1652789363',
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => ProducOverview(
+                            productname: 'Onions',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/391306a.jpg?ts=1652789363',
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                  singleproveg(
+                    proname: 'Capsicum',
+                    proimg:
+                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/3888a.jpg?ts=1679311401',
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => ProducOverview(
+                            productname: 'Capsicum',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/3888a.jpg?ts=1679311401',
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                  singleproveg(
+                    proname: 'Leamons',
+                    proimg:
+                        'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/439699a.jpg',
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(
+                          builder: (context) => ProducOverview(
+                            productname: 'Leamons',
+                            productimage:
+                                'https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=50,metadata=none,w=180/app/images/products/sliding_image/439699a.jpg',
+                          ),
                         ),
                       );
                     },
