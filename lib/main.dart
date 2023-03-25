@@ -4,6 +4,7 @@ import 'package:foodpp/screen/home.dart';
 import 'package:foodpp/screen/productOverview.dart';
 
 import 'auth/signin.dart';
+import 'myprofile/myprofile.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Fresh',
-      home: Home(),
+      home: Myprofile(),
     );
   }
 }

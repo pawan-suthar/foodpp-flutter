@@ -3,9 +3,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
+import '../myprofile/myprofile.dart';
+
 class DrawerWidget extends StatelessWidget {
-  Widget listTile({required IconData icon, required String title}) {
+  Widget listTile({
+    required IconData icon,
+    required String title,
+    Function()? onTap,
+  }) {
     return ListTile(
+      onTap: onTap,
       leading: Icon(
         icon,
         size: 32,
@@ -40,6 +47,8 @@ class DrawerWidget extends StatelessWidget {
                       backgroundColor: Colors.white54,
                       radius: 45,
                       child: CircleAvatar(
+                        backgroundImage: NetworkImage(
+                            "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSwWsiybRV3hquFxLGZ5R67U6t3HZnqhLFJTcwi0D122HLk2NGq"),
                         radius: 40,
                         backgroundColor: Colors.green.shade900,
                       ),
@@ -71,7 +80,16 @@ class DrawerWidget extends StatelessWidget {
               ),
             ),
             listTile(icon: Icons.home_outlined, title: "Home"),
-            listTile(icon: Icons.person_outline, title: "My Profile"),
+            listTile(
+                icon: Icons.person_outline,
+                title: "My Profile",
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => Myprofile(),
+                    ),
+                  );
+                }),
             listTile(icon: Icons.notifications_active, title: "Notifications"),
             listTile(icon: Icons.star_outline, title: "Ratings & Review"),
             listTile(icon: Icons.favorite_outline, title: "Wishlist"),
