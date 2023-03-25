@@ -56,12 +56,18 @@ class Prosearchlist extends StatelessWidget {
                             style: TextStyle(color: Colors.grey, fontSize: 15),
                           ),
                         ),
+                        // Divider(
+                        //   height: 50,
+                        //   thickness: 2,
+                        //   color: Colors.black,
+                        // ),
                         Center(
-                            child: Icon(
-                          Icons.arrow_drop_down,
-                          size: 20,
-                          color: Colors.green,
-                        ))
+                          child: Icon(
+                            Icons.arrow_drop_down,
+                            size: 20,
+                            color: Colors.green,
+                          ),
+                        ),
                       ],
                     ),
                   ),

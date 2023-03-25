@@ -8,11 +8,18 @@ class Search extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Search"),
+        backgroundColor: Colors.green,
+        title: Text(
+          "Search",
+          style: TextStyle(color: Colors.black),
+        ),
         actions: [
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: Icon(Icons.menu),
+            child: Icon(
+              Icons.menu,
+              color: Colors.black,
+            ),
           )
         ],
       ),
