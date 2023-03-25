@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:foodpp/screen/search/prosearchlist.dart';
 
 class Search extends StatelessWidget {
   const Search({super.key});
@@ -29,7 +30,7 @@ class Search extends StatelessWidget {
                   borderRadius: BorderRadius.circular(30),
                   borderSide: BorderSide.none,
                 ),
-                fillColor: Color(0xffc2c2c2),
+                fillColor: Color.fromARGB(131, 241, 240, 240),
                 filled: true,
                 hintText: "Search Products",
                 suffixIcon: Icon(Icons.search),
@@ -39,6 +40,7 @@ class Search extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
+          Prosearchlist(),
         ],
       ),
     );
