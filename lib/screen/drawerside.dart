@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:foodpp/screen/home.dart';
 
 import '../myprofile/myprofile.dart';
 
@@ -79,7 +80,16 @@ class DrawerWidget extends StatelessWidget {
                 ),
               ),
             ),
-            listTile(icon: Icons.home_outlined, title: "Home"),
+            listTile(
+                icon: Icons.home_outlined,
+                title: "Home",
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => Home(),
+                    ),
+                  );
+                }),
             listTile(
                 icon: Icons.person_outline,
                 title: "My Profile",
