@@ -41,6 +41,13 @@ class Search extends StatelessWidget {
             height: 10,
           ),
           Prosearchlist(),
+          Prosearchlist(),
+          Prosearchlist(),
+          Prosearchlist(),
+          Prosearchlist(),
+          Prosearchlist(),
+          Prosearchlist(),
+          Prosearchlist(),
         ],
       ),
     );
