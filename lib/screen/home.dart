@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:foodpp/screen/productOverview.dart';
+import 'package:foodpp/screen/search/proserch.dart';
 import 'package:foodpp/screen/singleproduct.dart';
 
 import 'drawerside.dart';
@@ -159,24 +160,42 @@ class Home extends StatelessWidget {
         ),
         actions: [
           CircleAvatar(
-            radius: 12,
+            radius: 20,
             backgroundColor: Color.fromARGB(255, 188, 238, 167),
-            child: Icon(
-              Icons.search,
-              size: 17,
-              color: Colors.black,
+            child: IconButton(
+              icon: Icon(
+                Icons.search,
+                size: 20,
+                color: Colors.black,
+              ),
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => Search(),
+                  ),
+                );
+              },
             ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 5),
             child: CircleAvatar(
               backgroundColor: Color.fromARGB(255, 188, 238, 167),
-              child: Icon(
-                Icons.shop_2_rounded,
-                size: 17,
-                color: Colors.black,
+              child: IconButton(
+                icon: Icon(
+                  Icons.shopping_cart,
+                  size: 20,
+                  color: Colors.black,
+                ),
+                onPressed: () {
+                  // Navigator.of(context).push(
+                  //   MaterialPageRoute(
+                  //     builder: (context) => Search(),
+                  //   ),
+                  // );
+                },
               ),
-              radius: 12,
+              radius: 20,
             ),
           ),
         ],
