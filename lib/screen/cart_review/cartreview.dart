@@ -35,9 +35,16 @@ class Cartreview extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          SingleItem(),
-          SingleItem(),
-          SingleItem(),
+          SingleItem(
+            isBool:
+                true, //* agar true hoga to add button or false to delete btn
+          ),
+          SingleItem(
+            isBool: true,
+          ),
+          SingleItem(
+            isBool: true,
+          ),
           SizedBox(
             height: 10,
           ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:foodpp/Widgets/SingleItem.dart';
+import 'package:foodpp/Widgets/prosearchlist.dart';
 
 import '../../Widgets/prosearchlist.dart';
 
@@ -49,14 +49,23 @@ class Search extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          SingleItem(),
-          SingleItem(),
-          SingleItem(),
-          SingleItem(),
-          SingleItem(),
-          SingleItem(),
-          SingleItem(),
-          SingleItem(),
+
+          //* main page upper serch button me
+          SingleItem(
+            isBool: false, //* if false add btn how otherwise delete
+          ),
+          SingleItem(
+            isBool: false,
+          ),
+          SingleItem(
+            isBool: false,
+          ),
+          SingleItem(
+            isBool: false,
+          ),
+          SingleItem(
+            isBool: false,
+          ),
         ],
       ),
     );
