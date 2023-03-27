@@ -5,6 +5,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:foodpp/screen/home.dart';
 
 import '../myprofile/myprofile.dart';
+import 'cart_review/cartreview.dart';
 
 class DrawerWidget extends StatelessWidget {
   Widget listTile({
@@ -91,19 +92,30 @@ class DrawerWidget extends StatelessWidget {
                   );
                 }),
             listTile(
-                icon: Icons.person_outline,
-                title: "My Profile",
-                onTap: () {
-                  Navigator.of(context).push(
-                    MaterialPageRoute(
-                      builder: (context) => Myprofile(),
-                    ),
-                  );
-                }),
+              icon: Icons.person_outline,
+              title: "My Profile",
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => Myprofile(),
+                  ),
+                );
+              },
+            ),
             listTile(icon: Icons.notifications_active, title: "Notifications"),
             listTile(icon: Icons.star_outline, title: "Ratings & Review"),
             listTile(icon: Icons.favorite_outline, title: "Wishlist"),
-            listTile(icon: Icons.shopping_cart, title: "Cart"),
+            listTile(
+              icon: Icons.shopping_cart,
+              title: "Cart",
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => Cartreview(),
+                  ),
+                );
+              },
+            ),
             listTile(icon: Icons.format_quote_outlined, title: "FAQ's"),
             Container(
               padding: EdgeInsets.symmetric(horizontal: 20),

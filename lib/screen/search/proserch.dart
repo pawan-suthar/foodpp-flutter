@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:foodpp/screen/search/prosearchlist.dart';
+import 'package:foodpp/Widgets/SingleItem.dart';
+
+import '../../Widgets/prosearchlist.dart';
 
 class Search extends StatelessWidget {
   const Search({super.key});
@@ -47,14 +49,14 @@ class Search extends StatelessWidget {
           SizedBox(
             height: 10,
           ),
-          Prosearchlist(),
-          Prosearchlist(),
-          Prosearchlist(),
-          Prosearchlist(),
-          Prosearchlist(),
-          Prosearchlist(),
-          Prosearchlist(),
-          Prosearchlist(),
+          SingleItem(),
+          SingleItem(),
+          SingleItem(),
+          SingleItem(),
+          SingleItem(),
+          SingleItem(),
+          SingleItem(),
+          SingleItem(),
         ],
       ),
     );

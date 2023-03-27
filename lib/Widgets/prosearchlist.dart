@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Prosearchlist extends StatelessWidget {
-  const Prosearchlist({super.key});
+class SingleItem extends StatelessWidget {
+  const SingleItem({super.key});
 
   @override
   Widget build(BuildContext context) {
