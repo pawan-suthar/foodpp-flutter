@@ -4,6 +4,7 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:foodpp/screen/productOverview.dart';
 import 'package:foodpp/screen/search/proserch.dart';
 import 'package:foodpp/screen/singleproduct.dart';
+import 'cart_review/cartreview.dart';
 
 import 'drawerside.dart';
 
@@ -188,11 +189,11 @@ class Home extends StatelessWidget {
                   color: Colors.black,
                 ),
                 onPressed: () {
-                  // Navigator.of(context).push(
-                  //   MaterialPageRoute(
-                  //     builder: (context) => Search(),
-                  //   ),
-                  // );
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => Cartreview(),
+                    ),
+                  );
                 },
               ),
               radius: 20,
