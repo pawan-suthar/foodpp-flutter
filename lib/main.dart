@@ -1,7 +1,9 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:foodpp/providers/productprovider.dart';
 import 'package:foodpp/screen/home.dart';
 import 'package:foodpp/screen/productOverview.dart';
+import 'package:provider/provider.dart';
 
 import 'auth/signin.dart';
 import 'myprofile/myprofile.dart';
@@ -19,10 +21,13 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Fresh',
-      home: Home(),
+    return ChangeNotifierProvider<Productprovider>(
+      create: (context) => Productprovider(),
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Fresh',
+        home: Home(),
+      ),
     );
   }
 }

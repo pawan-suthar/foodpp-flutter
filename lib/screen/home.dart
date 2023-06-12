@@ -1,21 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
+import 'package:foodpp/providers/productprovider.dart';
 import 'package:foodpp/screen/productOverview.dart';
 import 'package:foodpp/screen/search/proserch.dart';
 import 'package:foodpp/screen/singleproduct.dart';
+import 'package:provider/provider.dart';
 import 'cart_review/cartreview.dart';
 
 import 'drawerside.dart';
 
-class Home extends StatelessWidget {
-/*  
-  * PRODUCT function
+class Home extends StatefulWidget {
+  const Home({super.key});
 
+  @override
+  State<Home> createState() => _HomeState();
+}
 
-  * drawer me niche wali list tiles ka func
-
- */
+class _HomeState extends State<Home> {
   Widget listTile({required IconData icon, required String title}) {
     return ListTile(
       leading: Icon(
@@ -29,10 +31,19 @@ class Home extends StatelessWidget {
     );
   }
 
-  const Home({super.key});
+  // @override
+  // void initState() {
+  //   Productprovider productprovider = Provider.of(context, listen: false);
+  //   productprovider.fetchgreenseasoning();
+  //   super.initState();
+  // }
 
   @override
   Widget build(BuildContext context) {
+    Productprovider productprovider = Provider.of(
+      context,
+    );
+    productprovider.fetchgreenseasoning();
     return Scaffold(
       backgroundColor: Color(0xffcbcbcb),
       drawer: DrawerWidget(),
